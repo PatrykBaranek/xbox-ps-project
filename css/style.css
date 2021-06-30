@@ -13,6 +13,8 @@ html {
 }
 
 body {
+	background-color: #111;
+	color: #ddd;
 	font-family: sans-serif;
 }
 
