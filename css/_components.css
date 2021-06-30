@@ -1,0 +1,25 @@
+/* Xbox Playstation Button - Start Page */
+
+.ps-btn,
+.xbx-btn {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+}
+
+.ps-btn:hover {
+	color: #ddd;
+	background-color: #0070d1;
+	font-size: 3rem;
+}
+
+.xbx-btn:hover {
+	color: #ddd;
+	background-color: #107c10;
+	font-size: 3rem;
+}
