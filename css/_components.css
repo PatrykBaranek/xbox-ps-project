@@ -3,13 +3,14 @@
 .ps-btn,
 .xbx-btn {
 	display: flex;
+	height: 100%;
 	width: 50%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 2rem;
 	cursor: pointer;
-	transition: background-color 0.3s, color 0.3s, font-size 0.3s;
+	transition: background-color 0.6s, color 0.6s, font-size 0.3s, width 0.6s;
 }
 
 .ps-btn:hover {
@@ -22,4 +23,18 @@
 	color: #ddd;
 	background-color: #107c10;
 	font-size: 3rem;
+}
+
+/* Display none class */
+
+.hide {
+	display: none;
+}
+
+/* After click btn width 100% and other one hide */
+
+.btn-change-click {
+	/* position: absolute;
+	left: 0; */
+	width: 100%;
 }
