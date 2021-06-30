@@ -10,7 +10,8 @@
 	align-items: center;
 	font-size: 2rem;
 	cursor: pointer;
-	transition: background-color 0.4s, font-size 0.3s, width 0.4s, display 0.3s;
+	transition: background-color 0.4s, font-size 0.3s, width 0.4s, display 0.3s,
+		transform 1s 2s;
 }
 
 .ps-btn:hover {
@@ -36,6 +37,8 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: #107c10;
+	font-size: 3rem;
 }
 
 .from-right-to-left {
@@ -43,4 +46,21 @@
 	top: 0;
 	right: 0;
 	width: 100%;
+	background-color: #0070d1;
+	font-size: 3rem;
+}
+
+.to-main-page-animation {
+	transform: translateY(-200%);
+}
+
+/* Text Hiding */
+
+@keyframes hidingText {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
