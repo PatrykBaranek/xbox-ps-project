@@ -102,3 +102,20 @@ nav a:hover .underline-span {
 		transform: translateX(0);
 	}
 }
+
+/* Nav item bouttons */
+
+.nav__item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+
+.nav__item:hover::before {
+	border-left: 4px solid #fff;
+	transform: scale(1);
+}
