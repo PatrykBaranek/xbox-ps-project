@@ -24,6 +24,14 @@
 	font-size: 3rem;
 }
 
+/* burger-btn */
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 25px;
+	font-size: 35px;
+}
+
 /* Display none class */
 
 .hide {
@@ -60,6 +68,7 @@
 	0% {
 		opacity: 1;
 	}
+
 	100% {
 		opacity: 0;
 	}
