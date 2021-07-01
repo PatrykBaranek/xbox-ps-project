@@ -24,14 +24,6 @@
 	font-size: 3rem;
 }
 
-/* burger-btn */
-.burger-btn {
-	position: fixed;
-	top: 20px;
-	right: 25px;
-	font-size: 35px;
-}
-
 /* Display none class */
 
 .hide {
@@ -71,5 +63,42 @@
 
 	100% {
 		opacity: 0;
+	}
+}
+
+/* burger-btn - Nav*/
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 0.2em 0.4em;
+	background: none;
+	font-size: 3.6rem;
+	color: #ddd;
+	cursor: pointer;
+	z-index: 99999;
+}
+
+.burger-btn:active {
+	border: 1px solid #ddd;
+	border-radius: 25px;
+}
+
+nav a:hover .underline-span {
+	background-color: #ddd;
+}
+
+/* Nav items animation */
+
+.nav-items-animation {
+	animation: navItemsAnimation 1s both;
+}
+
+@keyframes navItemsAnimation {
+	from {
+		transform: translateX(200%);
+	}
+	to {
+		transform: translateX(0);
 	}
 }

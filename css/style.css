@@ -10,6 +10,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -45,8 +46,44 @@ body {
 
 .wrapper {
 	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 /* Nav */
+
+.nav {
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
+	transform: translateX(100%);
+	transition: transform 0.5s;
+}
+
+.nav--active {
+	transform: translateX(0);
+}
+
+.nav__items {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav__item {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 0.5em 0;
+	padding: 0.5em 2em;
+	font-size: 2.8rem;
+	color: #ddd;
+	text-decoration: none;
+}
 
 /* *************RWD************ */
