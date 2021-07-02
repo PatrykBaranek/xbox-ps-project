@@ -5,6 +5,9 @@ const navBtn = document.querySelector(".burger-btn");
 const nav = document.querySelector(".nav");
 const allNavItems = document.querySelectorAll(".nav__item");
 
+const divSwitch = document.querySelector(".switch");
+const playstationSection = document.querySelector(".playstation-section");
+
 // Nav animation handler
 const handleNav = () => {
 	nav.classList.toggle("nav--active");
@@ -30,6 +33,8 @@ const handleNavItemsAnimation = () => {
 
 navBtn.addEventListener("click", handleNav);
 
+// Showing website
+
 // Start Page
 xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
@@ -40,4 +45,8 @@ psBtn.addEventListener("click", () => {
 	xbxBtn.classList.add("hide");
 	psBtn.classList.add("from-right-to-left");
 	psBtn.classList.add("to-main-page-animation");
+	setTimeout(() => {
+		divSwitch.classList.toggle("hide");
+		playstationSection.classList.toggle("hide");
+	}, 2500);
 });
