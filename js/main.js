@@ -39,9 +39,9 @@ navBtn.addEventListener("click", handleNav);
 
 const changePlayStationHeaderWallpaper = () => {
 	const headerWallpapersArray = [
-		"../img/playstation/ps-header/horizon-wallpaper.gif",
-		"../img/playstation/ps-header/uncharted-wallpaper.gif",
-		"../img/playstation/ps-header/ghostoftsushima-wallpaper.gif",
+		"./img/playstation/ps-header/horizon-wallpaper.gif",
+		"./img/playstation/ps-header/uncharted-wallpaper.gif",
+		"./img/playstation/ps-header/ghostoftsushima-wallpaper.gif",
 	];
 
 	const randomWallpaper =
