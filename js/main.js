@@ -9,6 +9,14 @@ const divSwitch = document.querySelector(".switch");
 const playstationSection = document.querySelector(".playstation-section");
 
 const header = document.querySelector(".header");
+const headerWallpapersArray = [
+	"./img/playstation/ps-header/horizon-wallpaper.gif",
+	"./img/playstation/ps-header/uncharted-wallpaper.gif",
+	"./img/playstation/ps-header/ghostoftsushima-wallpaper.gif",
+	"./img/playstation/ps-header/tlou2-wallpaper.gif",
+	"./img/playstation/ps-header/spiderman-wallpaper.gif",
+	"./img/playstation/ps-header/death-wallpaper.gif",
+];
 
 // Nav animation handler
 const handleNav = () => {
@@ -37,25 +45,19 @@ navBtn.addEventListener("click", handleNav);
 
 // Header changing wallpaper
 
+let index = 0;
+
 const changePlayStationHeaderWallpaper = () => {
-	const headerWallpapersArray = [
-		"./img/playstation/ps-header/horizon-wallpaper.gif",
-		"./img/playstation/ps-header/uncharted-wallpaper.gif",
-		"./img/playstation/ps-header/ghostoftsushima-wallpaper.gif",
-		"./img/playstation/ps-header/tlou2-wallpaper.gif",
-		"./img/playstation/ps-header/spiderman-wallpaper.gif",
-		"./img/playstation/ps-header/death-wallpaper.gif",
-	];
+	if (index > headerWallpapersArray.length - 1) {
+		index = 0;
+	}
+	// console.log(`url: ${headerWallpapersArray[index]}, index: ${index}`);
+	header.style.backgroundImage = "url(" + headerWallpapersArray[index] + ")";
 
-	const randomWallpaper =
-		headerWallpapersArray[
-			Math.floor(Math.random() * headerWallpapersArray.length)
-		];
-
-	header.style.backgroundImage = "url(" + randomWallpaper + ")";
+	index++;
 };
 
-setInterval(changePlayStationHeaderWallpaper, 3000);
+setInterval(changePlayStationHeaderWallpaper, 2500);
 
 // Start Page
 xbxBtn.addEventListener("click", () => {
