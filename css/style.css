@@ -53,6 +53,30 @@ body {
 
 /* Nav */
 
+.navbar {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	height: 90px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.navbar__ps-logo {
+	font-size: 4rem;
+	color: #0070d1;
+}
+
+.navbar_ps-logo a {
+	text-decoration: none;
+}
+
+.navbar_ps-logo a:active {
+	text-decoration: none;
+}
+
 .nav {
 	position: fixed;
 	top: 0;
@@ -87,5 +111,7 @@ body {
 	color: #ddd;
 	text-decoration: none;
 }
+
+/* Header */
 
 /* *************RWD************ */
