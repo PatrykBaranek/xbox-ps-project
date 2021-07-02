@@ -42,6 +42,9 @@ const changePlayStationHeaderWallpaper = () => {
 		"./img/playstation/ps-header/horizon-wallpaper.gif",
 		"./img/playstation/ps-header/uncharted-wallpaper.gif",
 		"./img/playstation/ps-header/ghostoftsushima-wallpaper.gif",
+		"./img/playstation/ps-header/tlou2-wallpaper.gif",
+		"./img/playstation/ps-header/spiderman-wallpaper.gif",
+		"./img/playstation/ps-header/death-wallpaper.gif",
 	];
 
 	const randomWallpaper =
