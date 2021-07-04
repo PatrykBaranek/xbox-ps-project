@@ -72,8 +72,8 @@ psBtn.addEventListener("click", () => {
 	psBtn.classList.add("to-main-page-animation");
 	// playstationSection.style.zIndex = "-9999";
 	setTimeout(() => {
-		divSwitch.classList.toggle("hide");
-		playstationSection.classList.toggle("hide");
+		divSwitch.classList.add("hide");
+		playstationSection.classList.remove("hide");
 		// playstationSection.style.zIndex = "0";
 	}, 2300);
 });
