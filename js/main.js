@@ -18,6 +18,31 @@ const headerWallpapersArray = [
 	"./img/playstation/ps-header/death-wallpaper.gif",
 ];
 
+const gameSectionImagesArray = [
+	"./img/playstation/game-section/bloodborne.jpg",
+	"./img/playstation/game-section/days_gone.jpg",
+	"./img/playstation/game-section/death_stranding.jpg",
+	"./img/playstation/game-section/demon_souls.jpg",
+	"./img/playstation/game-section/final_fantasy_7.jpg",
+	"./img/playstation/game-section/ghost_of_tsushima.jpg",
+	"./img/playstation/game-section/god_of_war.jpg",
+	"./img/playstation/game-section/horizon.jpg",
+	"./img/playstation/game-section/infamous.jpg",
+	"./img/playstation/game-section/killzone.jpg",
+	"./img/playstation/game-section/little_big_planet.jpg",
+	"./img/playstation/game-section/morales.jpg",
+	"./img/playstation/game-section/persona.jpg",
+	"./img/playstation/game-section/ratchet_and_clank_rift_apart.jpg",
+	"./img/playstation/game-section/ratchet_and_clank.jpg",
+	"./img/playstation/game-section/shadow_of_the_colossus.jpg",
+	"./img/playstation/game-section/spider_man.jpg",
+	"./img/playstation/game-section/the_last_guardian.jpg",
+	"./img/playstation/game-section/the_last_of_us_part_2.jpg",
+	"./img/playstation/game-section/the_last_of_us.jpg",
+	"./img/playstation/game-section/uncharted.jpg",
+	"./img/playstation/game-section/until_dawn.jpg",
+];
+
 // Nav animation handler
 const handleNav = () => {
 	nav.classList.toggle("nav--active");

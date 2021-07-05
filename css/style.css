@@ -117,7 +117,7 @@ body {
 .header-main-wrapper {
 	position: relative;
 	top: 60px;
-	height: 300vh;
+	/* height: 300vh; */
 }
 
 /* Header */
@@ -125,8 +125,7 @@ body {
 .header {
 	position: relative;
 	top: 0;
-	height: 90vh;
-	background-image: url("../img/playstation/ps-header/uncharted-wallpaper.gif");
+	height: calc(100vh - 60px);
 	background-position: center;
 	background-size: cover;
 }
@@ -188,8 +187,9 @@ body {
 
 .games-section__games {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	margin: 0 3em;
 	/* height: 70vh; */
 }
 

@@ -127,7 +127,7 @@ nav a:hover .underline-span {
 	flex-direction: column;
 	height: 400px;
 	width: 300px;
-	margin: 20px auto;
+	margin: 20px 20px;
 	background-color: #fff;
 	color: var(--playstationFontColor);
 	border: 2px solid var(--playstationFontColor);
@@ -136,6 +136,10 @@ nav a:hover .underline-span {
 		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	cursor: pointer;
 	overflow: hidden;
+}
+
+.games-section__game:nth-last-child(0) {
+	justify-self: flex-start;
 }
 
 .game__img {
