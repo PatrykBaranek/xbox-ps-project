@@ -1,4 +1,5 @@
 @import "./components.css";
+@import "./colors.css";
 
 *,
 *::after,
@@ -17,6 +18,7 @@ body {
 	background-color: #333;
 	color: #ddd;
 	font-family: sans-serif;
+	scroll-padding-top: 60px;
 }
 
 /* Start Page */
@@ -62,7 +64,7 @@ body {
 	top: 0;
 	height: 60px;
 	width: 100%;
-	background-color: #fff;
+	background-color: var(--playstationBgColor);
 	z-index: 300;
 }
 
@@ -111,11 +113,18 @@ body {
 	text-decoration: none;
 }
 
+/* Header and Main wrapper */
+.header-main-wrapper {
+	position: relative;
+	top: 60px;
+	height: 300vh;
+}
+
 /* Header */
 
 .header {
 	position: relative;
-	top: 60px;
+	top: 0;
 	height: 90vh;
 	background-image: url("../img/playstation/ps-header/uncharted-wallpaper.gif");
 	background-position: center;
@@ -144,6 +153,79 @@ body {
 	text-align: center;
 	font-size: 6rem;
 	color: #0070d1;
+}
+
+/* Main */
+
+.main {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 3em 0;
+	background-color: #fff;
+}
+
+/* Game section */
+
+.games-section {
+	height: 100%;
+}
+
+.games-section__title {
+	padding: 4em 0;
+}
+
+.games-section__title hr {
+	border-color: var(--playstationFontColor);
+}
+
+.games-section__title h2 {
+	text-align: center;
+	font-size: 3rem;
+	margin: 0.6em 0;
+	color: var(--playstationFontColor);
+}
+
+.games-section__games {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	/* height: 70vh; */
+}
+
+.games-section__game {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 300px;
+	margin: 20px auto;
+	background-color: #fff;
+	color: var(--playstationFontColor);
+	border: 2px solid var(--playstationFontColor);
+	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.game__img {
+	height: 40%;
+	width: 100%;
+	background-image: url("../img/playstation/ps-header/horizon-wallpaper.gif");
+	background-size: cover;
+	background-position: center;
+}
+
+.game__title {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 2.5rem;
+}
+
+.game__description {
+	padding: 0.1em 2em;
+	font-size: 1.6em;
 }
 
 /* *************RWD************ */

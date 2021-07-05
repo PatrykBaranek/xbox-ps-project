@@ -119,3 +119,40 @@ nav a:hover .underline-span {
 	border-left: 4px solid #0070d1;
 	transform: scale(1);
 }
+
+/* Game Blocks */
+
+.games-section__game {
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 300px;
+	margin: 20px auto;
+	background-color: #fff;
+	color: var(--playstationFontColor);
+	border: 2px solid var(--playstationFontColor);
+	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+		rgba(0, 0, 0, 0.22) 0px 10px 10px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.game__img {
+	height: 40%;
+	width: 100%;
+	background-image: url("../img/playstation/ps-header/horizon-wallpaper.gif");
+	background-size: cover;
+	background-position: center;
+}
+
+.game__title {
+	text-align: center;
+	margin: 10px 0;
+	font-size: 2.5rem;
+}
+
+.game__description {
+	padding: 0.1em 2em;
+	font-size: 1.6em;
+}
