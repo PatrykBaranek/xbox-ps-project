@@ -136,10 +136,11 @@ nav a:hover .underline-span {
 		rgba(0, 0, 0, 0.22) 0px 10px 10px;
 	cursor: pointer;
 	overflow: hidden;
+	transition: transform 0.3s;
 }
 
-.games-section__game:nth-last-child(0) {
-	justify-self: flex-start;
+.games-section__game:hover {
+	transform: scale(1.1);
 }
 
 .game__img {
@@ -159,4 +160,17 @@ nav a:hover .underline-span {
 .game__description {
 	padding: 0.1em 2em;
 	font-size: 1.6em;
+}
+
+/* Background image - game section */
+
+#bloodborne {
+	background-image: url("../img/playstation/game-section/bloodborne.jpg");
+}
+
+#days-gone {
+	background-image: url("../img/playstation/game-section/days_gone.jpg");
+}
+#death-stranding {
+	background-image: url("../img/playstation/game-section/death_stranding.jpg");
 }
