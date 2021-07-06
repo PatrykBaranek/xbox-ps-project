@@ -171,6 +171,22 @@ nav a:hover .underline-span {
 #days-gone {
 	background-image: url("../img/playstation/game-section/days_gone.jpg");
 }
+
 #death-stranding {
 	background-image: url("../img/playstation/game-section/death_stranding.jpg");
+}
+
+#demon-souls {
+	background-image: url("../img/playstation/game-section/demon_souls.jpg");
+}
+
+#final-fantasy {
+	background-image: url("../img/playstation/game-section/final_fantasy_7_remake.jpg");
+}
+#ghost-of-tsushima {
+	background-image: url("../img/playstation/game-section/ghost_of_tsushima.jpg");
+}
+
+#god-of-war {
+	background-image: url("../img/playstation/game-section/god_of_war.jpg");
 }
