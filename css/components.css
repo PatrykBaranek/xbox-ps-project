@@ -183,10 +183,15 @@ nav a:hover .underline-span {
 #final-fantasy {
 	background-image: url("../img/playstation/game-section/final_fantasy_7_remake.jpg");
 }
+
 #ghost-of-tsushima {
 	background-image: url("../img/playstation/game-section/ghost_of_tsushima.jpg");
 }
 
 #god-of-war {
 	background-image: url("../img/playstation/game-section/god_of_war.jpg");
+}
+
+#horizon {
+	background-image: url("../img/playstation/game-section/horizon.jpg");
 }
