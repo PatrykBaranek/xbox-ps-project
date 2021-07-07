@@ -51,7 +51,7 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	/* max-width: 1200px; */
-	height: 200vh;
+	/* height: 200vh; */
 }
 
 /* Nav */
@@ -159,7 +159,8 @@ body {
 .main {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	justify-content: stretch;
+	align-items: center;
 	padding: 3em 0;
 	background-color: #fff;
 }
@@ -168,17 +169,22 @@ body {
 
 .games-section {
 	height: 100%;
+	width: 100%;
+	max-width: 1200px;
 }
 
-.games-section__title {
+.games-section__title,
+.console-section__title {
 	padding: 4em 0;
 }
 
-.games-section__title hr {
+.games-section__title hr,
+.console-section__title hr {
 	border-color: var(--playstationFontColor);
 }
 
-.games-section__title h2 {
+.games-section__title h2,
+.console-section__title h2 {
 	text-align: center;
 	font-size: 3rem;
 	margin: 0.6em 0;
@@ -191,6 +197,29 @@ body {
 	flex-wrap: wrap;
 	margin: 0 3em;
 	/* height: 70vh; */
+}
+
+/* Console section */
+
+.console-section {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.console-section__container {
+	display: flex;
+	width: 100%;
+	/* height: 100vh; */
+	justify-content: center;
+	align-items: center;
+}
+
+.console-section__console-ps4 {
+	width: 50%;
+	background-image: url("../img/playstation/console-section/ps4.jpg");
 }
 
 /* *************RWD************ */
