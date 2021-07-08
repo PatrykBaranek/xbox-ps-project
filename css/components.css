@@ -243,3 +243,47 @@ nav a:hover .underline-span {
 #uncharted4 {
 	background-image: url("../img/playstation/game-section/uncharted.jpg");
 }
+
+/* Console section buttons */
+
+.console-section__console-ps4,
+.console-section__console-ps5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 100%;
+	margin-right: 0.4em;
+	border: 2px solid var(--playstationFontColor);
+	border-radius: 25px;
+	background-image: url("../img/playstation/console-section/ps4.jpg");
+	background-size: cover;
+	background-position-x: 60%;
+	transition: width 0.3s, scale 1s;
+	cursor: pointer;
+}
+
+.ps4__title,
+.ps5__title {
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 5rem;
+}
+.ps4__title p,
+.ps5__title p {
+	padding: 0.5em 0.7em;
+}
+
+.console-section__console-ps5 {
+	margin-left: 0.4em;
+	margin-right: 0;
+	background-image: url("../img/playstation/console-section/ps5.jpg");
+}
+
+.console-section__console-ps4:hover,
+.console-section__console-ps5:hover {
+	width: 100%;
+}
+.console-section__console-ps4:active,
+.console-section__console-ps5:active {
+	transform: scale(1.1);
+}
