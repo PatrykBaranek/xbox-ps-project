@@ -1,3 +1,5 @@
+// Playstation
+
 const xbxBtn = document.querySelector(".xbx-btn");
 const psBtn = document.querySelector(".ps-btn");
 
@@ -7,6 +9,10 @@ const allNavItems = document.querySelectorAll(".nav__item");
 
 const divSwitch = document.querySelector(".switch");
 const playstationSection = document.querySelector(".playstation-section");
+
+// Xbox
+
+const xboxSection = document.querySelector(".xbox-section");
 
 const header = document.querySelector(".header");
 const headerWallpapersArray = [
@@ -64,16 +70,20 @@ xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
 	xbxBtn.classList.add("from-left-to-right");
 	xbxBtn.classList.add("to-main-page-animation");
+
+	setTimeout(() => {
+		divSwitch.classList.add("hide");
+		xboxSection.classList.remove("hide");
+	}, 2300);
 });
 
 psBtn.addEventListener("click", () => {
 	xbxBtn.classList.add("hide");
 	psBtn.classList.add("from-right-to-left");
 	psBtn.classList.add("to-main-page-animation");
-	// playstationSection.style.zIndex = "-9999";
+
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		playstationSection.classList.remove("hide");
-		// playstationSection.style.zIndex = "0";
 	}, 2300);
 });
