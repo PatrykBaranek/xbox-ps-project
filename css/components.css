@@ -15,12 +15,12 @@
 }
 
 .ps-btn:hover {
-	background-color: #0070d1;
+	background-color: var(--playstationFontColor);
 	font-size: 3rem;
 }
 
 .xbx-btn:hover {
-	background-color: #107c10;
+	background-color: var(--xboxFontColor);
 	font-size: 3rem;
 }
 
@@ -78,6 +78,10 @@
 	cursor: pointer;
 	z-index: 99999;
 	transition: transform 0.3s;
+}
+
+.xbox-burger-btn {
+	color: var(--xboxFontColor);
 }
 
 .burger-btn:active {

@@ -45,8 +45,6 @@ body {
 	z-index: 200;
 }
 
-/* Playstation section */
-
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -64,13 +62,24 @@ body {
 	top: 0;
 	height: 60px;
 	width: 100%;
-	background-color: var(--playstationBgColor);
 	z-index: 300;
 }
 
-.navbar__ps-logo {
+.navbar-xbox {
+	background-color: var(--xboxBgColor);
+}
+
+.navbar__ps-logo,
+.navbar__xbox-logo {
 	font-size: 4rem;
-	color: #0070d1;
+}
+
+.navbar__ps-logo {
+	color: var(--playstationFontColor);
+}
+
+.navbar__xbox-logo {
+	color: var(--xboxFontColor);
 }
 
 .bars-container {
