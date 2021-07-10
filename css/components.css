@@ -308,6 +308,13 @@
 	background-color: rgba(0, 0, 0, 0.6);
 	font-size: 5rem;
 }
+
+.xbox-series-s__title,
+.xbox-series-x__title {
+	text-align: center;
+	font-size: 2rem;
+}
+
 .ps4__title p,
 .ps5__title p,
 .xbox-series-s__title p,

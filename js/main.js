@@ -15,6 +15,8 @@ const playstationSection = document.querySelector(".playstation-section");
 const xboxSection = document.querySelector(".xbox-section");
 
 const header = document.querySelector(".header");
+const headerXbox = document.querySelector(".header-xbox");
+
 const headerWallpapersArray = [
 	"./img/playstation/ps-header/horizon-wallpaper.gif",
 	"./img/playstation/ps-header/uncharted-wallpaper.gif",
@@ -22,6 +24,15 @@ const headerWallpapersArray = [
 	"./img/playstation/ps-header/tlou2-wallpaper.gif",
 	"./img/playstation/ps-header/spiderman-wallpaper.gif",
 	"./img/playstation/ps-header/death-wallpaper.gif",
+];
+
+const headerXboxWallpapersArray = [
+	"./img/xbox/header-section/forza-horizon.gif",
+	"./img/xbox/header-section/cyberpunk.gif",
+	"./img/xbox/header-section/hades.gif",
+	"./img/xbox/header-section/halo.gif",
+	"./img/xbox/header-section/yakuza-like-a-dragon.gif",
+	"./img/xbox/header-section/batman.gif",
 ];
 
 // Nav animation handler
@@ -86,7 +97,19 @@ const changePlayStationHeaderWallpaper = () => {
 	index++;
 };
 
+const changeXboxHeaderWallpaper = () => {
+	if (index > headerXboxWallpapersArray.length - 1) {
+		index = 0;
+	}
+	// console.log(`url: ${headerWallpapersArray[index]}, index: ${index}`);
+	headerXbox.style.backgroundImage =
+		"url(" + headerXboxWallpapersArray[index] + ")";
+
+	index++;
+};
+
 setInterval(changePlayStationHeaderWallpaper, 2500);
+setInterval(changeXboxHeaderWallpaper, 2500);
 
 // Start Page
 xbxBtn.addEventListener("click", () => {
