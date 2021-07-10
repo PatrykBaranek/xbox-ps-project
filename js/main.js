@@ -17,6 +17,11 @@ const xboxSection = document.querySelector(".xbox-section");
 const header = document.querySelector(".header");
 const headerXbox = document.querySelector(".header-xbox");
 
+// Change site button
+
+const changeSiteBtnXbox = document.querySelector(".change-site-btn-xbox");
+const changeSiteBtnPs = document.querySelector(".change-site-btn-ps");
+
 const headerWallpapersArray = [
 	"./img/playstation/ps-header/horizon-wallpaper.gif",
 	"./img/playstation/ps-header/uncharted-wallpaper.gif",
@@ -108,14 +113,12 @@ const changeXboxHeaderWallpaper = () => {
 	index++;
 };
 
-setInterval(changePlayStationHeaderWallpaper, 2500);
-setInterval(changeXboxHeaderWallpaper, 2500);
-
 // Start Page
 xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
 	xbxBtn.classList.add("from-left-to-right");
 	xbxBtn.classList.add("to-main-page-animation");
+	setInterval(changeXboxHeaderWallpaper, 2500);
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		xboxSection.classList.remove("hide");
@@ -126,9 +129,25 @@ psBtn.addEventListener("click", () => {
 	xbxBtn.classList.add("hide");
 	psBtn.classList.add("from-right-to-left");
 	psBtn.classList.add("to-main-page-animation");
-
+	setInterval(changePlayStationHeaderWallpaper, 2500);
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		playstationSection.classList.remove("hide");
 	}, 2300);
+});
+
+// Change site button
+
+// Xbox site
+changeSiteBtnPs.addEventListener("click", () => {
+	xboxSection.classList.add("hide");
+	playstationSection.classList.remove("hide");
+	setInterval(changePlayStationHeaderWallpaper, 2500);
+});
+
+// Playstation site
+changeSiteBtnXbox.addEventListener("click", () => {
+	playstationSection.classList.add("hide");
+	xboxSection.classList.remove("hide");
+	setInterval(changeXboxHeaderWallpaper, 2500);
 });
