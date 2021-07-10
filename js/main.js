@@ -7,8 +7,14 @@ const navBtn = document.querySelector(".burger-btn");
 const nav = document.querySelector(".nav");
 const allNavItems = document.querySelectorAll(".nav__item");
 
+// Xbox
+const navBtnXbox = document.querySelector(".burger-btn-xbox");
+const navXbox = document.querySelector(".nav-xbox");
+const allNavItemsXbox = document.querySelectorAll(".nav__item-xbox");
+
 const divSwitch = document.querySelector(".switch");
 const playstationSection = document.querySelector(".playstation-section");
+const xboxSection = document.querySelector(".xbox-section");
 
 // Xbox
 
@@ -47,7 +53,30 @@ const handleNavItemsAnimation = () => {
 	});
 };
 
+const handleNavXbox = () => {
+	navXbox.classList.toggle("nav--active");
+
+	allNavItemsXbox.forEach((item) => {
+		item.addEventListener("click", () => {
+			navXbox.classList.remove("nav--active");
+		});
+	});
+
+	handleNavItemsAnimationXbox();
+};
+
+const handleNavItemsAnimationXbox = () => {
+	let delayTime = 0;
+
+	allNavItemsXbox.forEach((item) => {
+		item.classList.toggle("nav-items-animation");
+		item.style.animationDelay = "." + delayTime + "s";
+		delayTime++;
+	});
+};
+
 navBtn.addEventListener("click", handleNav);
+navBtnXbox.addEventListener("click", handleNavXbox);
 
 // Header changing wallpaper
 
@@ -70,7 +99,10 @@ xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
 	xbxBtn.classList.add("from-left-to-right");
 	xbxBtn.classList.add("to-main-page-animation");
+<<<<<<< HEAD
 
+=======
+>>>>>>> xbox-site
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		xboxSection.classList.remove("hide");

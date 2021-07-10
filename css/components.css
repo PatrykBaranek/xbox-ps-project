@@ -67,7 +67,8 @@
 }
 
 /* burger-btn - Nav*/
-.burger-btn {
+.burger-btn,
+.burger-btn-xbox {
 	position: fixed;
 	justify-self: flex-end;
 	top: 10px;
@@ -80,12 +81,13 @@
 	transition: transform 0.3s;
 }
 
-.burger-btn:active {
-	transform: scale(0.8);
+.burger-btn-xbox {
+	color: #107c10;
 }
 
-nav a:hover .underline-span {
-	background-color: #ddd;
+.burger-btn:active,
+.burger-btn-xbox:active {
+	transform: scale(0.8);
 }
 
 /* Nav items animation */
@@ -105,7 +107,8 @@ nav a:hover .underline-span {
 
 /* Nav item bouttons */
 
-.nav__item::before {
+.nav__item::before,
+.nav__item-xbox::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -117,6 +120,11 @@ nav a:hover .underline-span {
 
 .nav__item:hover::before {
 	border-left: 4px solid #0070d1;
+	transform: scale(1);
+}
+
+.nav__item-xbox:hover::before {
+	border-left: 4px solid #107c10;
 	transform: scale(1);
 }
 
@@ -137,6 +145,12 @@ nav a:hover .underline-span {
 	cursor: pointer;
 	overflow: hidden;
 	transition: transform 0.3s;
+}
+
+.games-section__game-xbox {
+	border-color: #107c10;
+	color: #107c10;
+	background-color: #222;
 }
 
 .games-section__game:hover {
@@ -247,7 +261,9 @@ nav a:hover .underline-span {
 /* Console section buttons */
 
 .console-section__console-ps4,
-.console-section__console-ps5 {
+.console-section__console-ps5,
+.console-section__console-xbox-series-s,
+.console-section__console-xbox-series-x {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -263,27 +279,52 @@ nav a:hover .underline-span {
 	cursor: pointer;
 }
 
-.ps4__title,
-.ps5__title {
-	background-color: rgba(0, 0, 0, 0.6);
-	font-size: 5rem;
-}
-.ps4__title p,
-.ps5__title p {
-	padding: 0.5em 0.7em;
-}
-
-.console-section__console-ps5 {
+.console-section__console-ps5,
+.console-section__console-xbox-series-x {
 	margin-left: 0.4em;
 	margin-right: 0;
 	background-image: url("../img/playstation/console-section/ps5.jpg");
 }
 
+.console-section__console-xbox-series-s {
+	background-image: url("../img/xbox/console-section/xbox-series-s.jpg");
+}
+
+.console-section__console-xbox-series-x {
+	background-image: url("../img/xbox/console-section/xbox-series-x.jpg");
+}
+
+.console-section__console-xbox-series-s,
+.console-section__console-xbox-series-x {
+	border-color: #107c10;
+	color: #107c10;
+	background-color: #222;
+}
+
+.ps4__title,
+.ps5__title,
+.xbox-series-s__title,
+.xbox-series-x__title {
+	background-color: rgba(0, 0, 0, 0.6);
+	font-size: 5rem;
+}
+.ps4__title p,
+.ps5__title p,
+.xbox-series-s__title p,
+.xbox-series-x__title p {
+	padding: 0.5em 0.7em;
+}
+
 .console-section__console-ps4:hover,
-.console-section__console-ps5:hover {
+.console-section__console-ps5:hover,
+.console-section__console-xbox-series-s:hover,
+.console-section__console-xbox-series-x:hover {
 	width: 100%;
 }
+
 .console-section__console-ps4:active,
-.console-section__console-ps5:active {
+.console-section__console-ps5:active,
+.console-section__console-xbox-series-s:active,
+.console-section__console-xbox-series-x:active {
 	transform: scale(1.1);
 }
