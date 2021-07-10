@@ -56,7 +56,8 @@ body {
 
 /* Nav */
 
-.navbar {
+.navbar,
+.navbar-xbox {
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -68,16 +69,22 @@ body {
 	z-index: 300;
 }
 
-.navbar__ps-logo {
+.navbar-xbox {
+	background-color: #333;
+}
+
+.navbar__ps-logo,
+.navbar__xbox-logo {
 	font-size: 4rem;
 	color: #0070d1;
 }
 
-.bars-container {
-	justify-self: flex-end;
+.navbar__xbox-logo {
+	color: #107c10;
 }
 
-.nav {
+.nav,
+.nav-xbox {
 	position: fixed;
 	top: 0;
 	display: flex;
@@ -87,21 +94,27 @@ body {
 	height: 100vh;
 	width: 100%;
 	background-color: #fff;
-	transform: translateX(100%);
+	transform: translateX(110%);
 	transition: transform 0.5s;
 	z-index: 200;
+}
+
+.nav-xbox {
+	background-color: #333;
 }
 
 .nav--active {
 	transform: translateX(0);
 }
 
-.nav__items {
+.nav__items,
+.nav__items-xbox {
 	display: flex;
 	flex-direction: column;
 }
 
-.nav__item {
+.nav__item,
+.nav__item-xbox {
 	position: relative;
 	display: block;
 	margin: 0.5em 0;
@@ -113,6 +126,10 @@ body {
 	text-decoration: none;
 }
 
+.nav__item-xbox {
+	color: #107c10;
+}
+
 /* Header, Main and footer wrapper */
 .header-main-wrapper {
 	position: relative;
@@ -122,7 +139,8 @@ body {
 
 /* Header */
 
-.header {
+.header,
+.header-xbox {
 	position: relative;
 	top: 0;
 	height: calc(100vh - 60px);
@@ -130,14 +148,16 @@ body {
 	background-size: cover;
 }
 
-.header__bg {
+.header__bg,
+.header__bg-xbox {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.header__text {
+.header__text,
+.header__text-xbox {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -145,23 +165,41 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.header__text h1 {
+.header__text h1,
+.header__text-xbox h1 {
 	font-size: 3.2rem;
 }
-.header__text .ps-logo-text {
+.header__text .ps-logo-text,
+.header__text-xbox .xbox-logo-text {
 	text-align: center;
 	font-size: 6rem;
-	color: #0070d1;
+}
+
+.ps-logo-text {
+	color: var(--playstationFontColor);
+}
+
+.xbox-logo-text {
+	color: #107c10;
 }
 
 /* Main */
 
-.main {
+.main,
+.main-xbox {
 	display: flex;
 	flex-direction: column;
-	justify-content: stretch;
+	/* justify-content: stretch; */
 	align-items: center;
 	padding: 3em 0;
+	/* background-color: #fff; */
+}
+
+.main-xbox {
+	background-color: #333;
+}
+
+#ps-main-bgc {
 	background-color: #fff;
 }
 
@@ -183,12 +221,22 @@ body {
 	border-color: var(--playstationFontColor);
 }
 
+.games-section__title-xbox hr,
+.console-section__title-xbox hr {
+	border-color: #107c10;
+}
+
 .games-section__title h2,
 .console-section__title h2 {
 	text-align: center;
 	font-size: 3rem;
 	margin: 0.6em 0;
 	color: var(--playstationFontColor);
+}
+
+.games-section__title-xbox h2,
+.console-section__title-xbox h2 {
+	color: #107c10;
 }
 
 .games-section__games {
@@ -219,19 +267,33 @@ body {
 
 /* Footer */
 
-.footer {
+.footer,
+.footer-xbox {
 	height: 70px;
 	background-color: var(--playstationBgColor);
 }
+
+.footer-xbox {
+	background-color: #333;
+}
+
 .footer hr {
 	border-color: var(--playstationFontColor);
 }
+.footer-xbox hr {
+	border-color: #107c10;
+}
 
-.footer .footer__text {
+.footer__text,
+.footer__text-xbox {
 	text-align: center;
 	line-height: 70px;
 	font-size: 3rem;
 	color: var(--playstationFontColor);
+}
+
+.footer__text-xbox {
+	color: #107c10;
 }
 
 /* *************RWD************ */
