@@ -1,5 +1,3 @@
-// Playstation
-
 const xbxBtn = document.querySelector(".xbx-btn");
 const psBtn = document.querySelector(".ps-btn");
 
@@ -14,10 +12,6 @@ const allNavItemsXbox = document.querySelectorAll(".nav__item-xbox");
 
 const divSwitch = document.querySelector(".switch");
 const playstationSection = document.querySelector(".playstation-section");
-const xboxSection = document.querySelector(".xbox-section");
-
-// Xbox
-
 const xboxSection = document.querySelector(".xbox-section");
 
 const header = document.querySelector(".header");
@@ -99,10 +93,6 @@ xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
 	xbxBtn.classList.add("from-left-to-right");
 	xbxBtn.classList.add("to-main-page-animation");
-<<<<<<< HEAD
-
-=======
->>>>>>> xbox-site
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		xboxSection.classList.remove("hide");
