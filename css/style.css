@@ -45,6 +45,15 @@ body {
 	z-index: 200;
 }
 
+.change-site-section {
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
 /* Playstation section */
 
 .wrapper {
@@ -66,10 +75,12 @@ body {
 	height: 60px;
 	width: 100%;
 	background-color: var(--playstationBgColor);
+	border-bottom: 1px solid var(--playstationFontColor);
 	z-index: 300;
 }
 
 .navbar-xbox {
+	border-bottom: 1px solid var(--xboxFontColor);
 	background-color: #333;
 }
 

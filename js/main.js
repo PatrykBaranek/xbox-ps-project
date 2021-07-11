@@ -91,7 +91,6 @@ navBtnXbox.addEventListener("click", handleNavXbox);
 // Header changing wallpaper
 
 let index = 0;
-
 const changePlayStationHeaderWallpaper = () => {
 	if (index > headerWallpapersArray.length - 1) {
 		index = 0;
@@ -102,23 +101,27 @@ const changePlayStationHeaderWallpaper = () => {
 	index++;
 };
 
+let indexXbox = 0;
 const changeXboxHeaderWallpaper = () => {
-	if (index > headerXboxWallpapersArray.length - 1) {
-		index = 0;
+	if (indexXbox > headerXboxWallpapersArray.length - 1) {
+		indexXbox = 0;
 	}
 	// console.log(`url: ${headerWallpapersArray[index]}, index: ${index}`);
 	headerXbox.style.backgroundImage =
-		"url(" + headerXboxWallpapersArray[index] + ")";
+		"url(" + headerXboxWallpapersArray[indexXbox] + ")";
 
-	index++;
+	indexXbox++;
 };
+
+setInterval(changeXboxHeaderWallpaper, 2500);
+setInterval(changePlayStationHeaderWallpaper, 2500);
 
 // Start Page
 xbxBtn.addEventListener("click", () => {
 	psBtn.classList.add("hide");
 	xbxBtn.classList.add("from-left-to-right");
 	xbxBtn.classList.add("to-main-page-animation");
-	setInterval(changeXboxHeaderWallpaper, 2500);
+
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		xboxSection.classList.remove("hide");
@@ -129,7 +132,7 @@ psBtn.addEventListener("click", () => {
 	xbxBtn.classList.add("hide");
 	psBtn.classList.add("from-right-to-left");
 	psBtn.classList.add("to-main-page-animation");
-	setInterval(changePlayStationHeaderWallpaper, 2500);
+
 	setTimeout(() => {
 		divSwitch.classList.add("hide");
 		playstationSection.classList.remove("hide");
@@ -137,17 +140,42 @@ psBtn.addEventListener("click", () => {
 });
 
 // Change site button
+const changeSiteDiv = document.querySelector(".change-site-section");
+const xboxChangeSiteBlock = document.querySelector(".xbox-block");
+const psChangeSiteBlock = document.querySelector(".ps-block");
 
 // Xbox site
 changeSiteBtnPs.addEventListener("click", () => {
 	xboxSection.classList.add("hide");
-	playstationSection.classList.remove("hide");
-	setInterval(changePlayStationHeaderWallpaper, 2500);
+	changeSiteDiv.classList.remove("hide");
+
+	xboxChangeSiteBlock.classList.add("hide");
+	psChangeSiteBlock.classList.add("from-right-to-left-ps-block-change-site");
+
+	setTimeout(() => {
+		changeSiteDiv.classList.add("hide");
+		playstationSection.classList.remove("hide");
+		psChangeSiteBlock.classList.remove(
+			"from-right-to-left-ps-block-change-site"
+		);
+	}, 2300);
 });
 
 // Playstation site
 changeSiteBtnXbox.addEventListener("click", () => {
 	playstationSection.classList.add("hide");
-	xboxSection.classList.remove("hide");
-	setInterval(changeXboxHeaderWallpaper, 2500);
+	changeSiteDiv.classList.remove("hide");
+
+	psChangeSiteBlock.classList.add("hide");
+	xboxChangeSiteBlock.classList.add(
+		"from-left-to-right-xbox-block-change-site"
+	);
+
+	setTimeout(() => {
+		changeSiteDiv.classList.add("hide");
+		xboxSection.classList.remove("hide");
+		xboxChangeSiteBlock.classList.remove(
+			"from-left-to-right-xbox-block-change-site"
+		);
+	}, 2300);
 });
