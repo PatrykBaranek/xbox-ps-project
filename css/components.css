@@ -249,6 +249,8 @@
 
 /* Background image - game section */
 
+/* PlayStation */
+
 #bloodborne {
 	background-image: url("../img/playstation/game-section/bloodborne.jpg");
 }
@@ -327,6 +329,72 @@
 
 #uncharted4 {
 	background-image: url("../img/playstation/game-section/uncharted.jpg");
+}
+
+/* Xbox Game Pass*/
+
+#forza-horizon {
+	background-image: url("../img/xbox/game-section/forza-horizon.jpg");
+}
+
+#nfs-heat {
+	background-image: url("../img/xbox/game-section/nfsheat.jpg");
+}
+
+#prey {
+	background-image: url("../img/xbox/game-section/prey.jpg");
+}
+
+#dishonored {
+	background-image: url("../img/xbox/game-section/dishonored.jpg");
+}
+
+#dishonored-2 {
+	background-image: url("../img/xbox/game-section/dishonored2.jpg");
+}
+
+#dishonored-death-of-the-outsider {
+	background-image: url("../img/xbox/game-section/dishonored-death-of-the-outsider.jpg");
+}
+
+#yakuza-like-a-dragon {
+	background-image: url("../img/xbox/game-section/yakuza-like-a-dragon.jpg");
+}
+
+#battlefield-3 {
+	background-image: url("../img/xbox/game-section/bf3.jpg");
+}
+
+#battlefield-4 {
+	background-image: url("../img/xbox/game-section/bf4.jpg");
+}
+
+#control {
+	background-image: url("../img/xbox/game-section/control.jpg");
+}
+
+#doom {
+	background-image: url("../img/xbox/game-section/doom.jpg");
+}
+
+#doom-eternal {
+	background-image: url("../img/xbox/game-section/doom-eternal.jpg");
+}
+
+#fallout-4 {
+	background-image: url("../img/xbox/game-section/Fallout-4.jpg");
+}
+
+#fallout-76 {
+	background-image: url("../img/xbox/game-section/fallout-76.png");
+}
+
+#gta-v {
+	background-image: url("../img/xbox/game-section/gta-5.jpg");
+}
+
+#halo-collection {
+	background-image: url("../img/xbox/game-section/halo.jpg");
 }
 
 /* Console section buttons */
