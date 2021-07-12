@@ -472,5 +472,40 @@
 .console-section__console-ps5:active,
 .console-section__console-xbox-series-s:active,
 .console-section__console-xbox-series-x:active {
+	width: 100%;
 	transform: scale(1.1);
+}
+
+/********** RWD *************/
+
+@media (min-width: 768px) {
+	.xbx-btn,
+	.ps-btn {
+		font-size: 4.7rem;
+	}
+
+	.ps-btn:hover {
+		font-size: 7rem;
+	}
+
+	.xbx-btn:hover {
+		font-size: 7rem;
+	}
+
+	.xbox-block,
+	.ps-block {
+		font-size: 7rem;
+	}
+
+	.ps4__title,
+	.ps5__title,
+	.xbox-series-s__title,
+	.xbox-series-x__title {
+		font-size: 6rem;
+	}
+
+	.xbox-series-s__title p,
+	.xbox-series-x__title p {
+		padding: 0.4em 0.6em;
+	}
 }

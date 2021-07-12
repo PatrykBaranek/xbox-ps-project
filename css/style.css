@@ -111,7 +111,7 @@ body {
 }
 
 .nav-xbox {
-	background-color: var(--xbox);
+	background-color: var(--xboxBgColor);
 }
 
 .nav--active {
@@ -308,3 +308,26 @@ body {
 }
 
 /* *************RWD************ */
+
+@media (min-width: 768px) {
+	.nav__item,
+	.nav__item-xbox {
+		font-size: 5.5rem;
+	}
+
+	.header__text h1,
+	.header__text-xbox h1 {
+		font-size: 5rem;
+	}
+
+	.header__text .ps-logo-text,
+	.header__text-xbox .xbox-logo-text {
+		text-align: center;
+		font-size: 10rem;
+	}
+
+	.games-section__title h2,
+	.console-section__title h2 {
+		font-size: 6rem;
+	}
+}
