@@ -15,12 +15,12 @@
 }
 
 .ps-btn:hover {
-	background-color: #0070d1;
+	background-color: var(--playstationFontColor);
 	font-size: 3rem;
 }
 
 .xbx-btn:hover {
-	background-color: #107c10;
+	background-color: var(--xboxFontColor);
 	font-size: 3rem;
 }
 
@@ -37,7 +37,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #107c10;
+	background-color: var(--xboxFontColor);
 	font-size: 3rem;
 }
 
@@ -46,7 +46,7 @@
 	top: 0;
 	right: 0;
 	width: 100%;
-	background-color: #0070d1;
+	background-color: var(--playstationFontColor);
 	font-size: 3rem;
 }
 
@@ -83,13 +83,13 @@
 .from-left-to-right-xbox-block-change-site {
 	left: 0;
 	/* transform: translateX(0); */
-	background-color: #107c10;
+	background-color: var(--xboxFontColor);
 }
 
 .from-right-to-left-ps-block-change-site {
 	right: 0;
 	/* transform: translateX(0); */
-	background-color: #0070d1;
+	background-color: var(--playstationFontColor);
 }
 
 /* Text Hiding */
@@ -142,14 +142,14 @@
 	right: 10px;
 	background: none;
 	font-size: 3.6rem;
-	color: #0070d1;
+	color: var(--playstationFontColor);
 	cursor: pointer;
 	z-index: 99999;
 	transition: transform 0.3s;
 }
 
 .burger-btn-xbox {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 .burger-btn:active,
@@ -186,12 +186,12 @@
 }
 
 .nav__item:hover::before {
-	border-left: 4px solid #0070d1;
+	border-left: 4px solid var(--playstationFontColor);
 	transform: scale(1);
 }
 
 .nav__item-xbox:hover::before {
-	border-left: 4px solid #107c10;
+	border-left: 4px solid var(--xboxFontColor);
 	transform: scale(1);
 }
 
@@ -215,8 +215,8 @@
 }
 
 .games-section__game-xbox {
-	border-color: #107c10;
-	color: #107c10;
+	border-color: var(--xboxFontColor);
+	color: var(--xboxFontColor);
 	background-color: #222;
 }
 
@@ -435,8 +435,8 @@
 
 .console-section__console-xbox-series-s,
 .console-section__console-xbox-series-x {
-	border-color: #107c10;
-	color: #107c10;
+	border-color: var(--xboxFontColor);
+	color: var(--xboxFontColor);
 	background-color: #222;
 }
 

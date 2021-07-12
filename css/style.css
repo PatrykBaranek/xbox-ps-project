@@ -15,8 +15,8 @@ html {
 }
 
 body {
-	background-color: #333;
-	color: #ddd;
+	background-color: var(--xboxBgColor);
+	color: var(--playstationBgColor);
 	font-family: sans-serif;
 	scroll-padding-top: 60px;
 }
@@ -29,7 +29,7 @@ body {
 	left: 50%;
 	padding: 0.4em 1em;
 	background-color: #ddd;
-	color: #333;
+	color: var(--xboxBgColor);
 	transform: translate(-50%, -10%);
 	border-radius: 25px;
 	font-size: 2.3rem;
@@ -81,17 +81,17 @@ body {
 
 .navbar-xbox {
 	border-bottom: 1px solid var(--xboxFontColor);
-	background-color: #333;
+	background-color: var(--xboxBgColor);
 }
 
 .navbar__ps-logo,
 .navbar__xbox-logo {
 	font-size: 4rem;
-	color: #0070d1;
+	color: var(--playstationFontColor);
 }
 
 .navbar__xbox-logo {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 .nav,
@@ -104,14 +104,14 @@ body {
 	align-items: center;
 	height: 100vh;
 	width: 100%;
-	background-color: #fff;
+	background-color: var(--playstationBgColor);
 	transform: translateX(110%);
 	transition: transform 0.5s;
 	z-index: 200;
 }
 
 .nav-xbox {
-	background-color: #333;
+	background-color: var(--xbox);
 }
 
 .nav--active {
@@ -133,12 +133,12 @@ body {
 	font-size: 2.8rem;
 	text-align: center;
 	text-transform: uppercase;
-	color: #0070d1;
+	color: var(--playstationFontColor);
 	text-decoration: none;
 }
 
 .nav__item-xbox {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 /* Header, Main and footer wrapper */
@@ -191,7 +191,7 @@ body {
 }
 
 .xbox-logo-text {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 /* Main */
@@ -207,11 +207,11 @@ body {
 }
 
 .main-xbox {
-	background-color: #333;
+	background-color: var(--xboxBgColor);
 }
 
 #ps-main-bgc {
-	background-color: #fff;
+	background-color: var(--playstationBgColor);
 }
 
 /* Game section */
@@ -234,7 +234,7 @@ body {
 
 .games-section__title-xbox hr,
 .console-section__title-xbox hr {
-	border-color: #107c10;
+	border-color: var(--xboxFontColor);
 }
 
 .games-section__title h2,
@@ -247,7 +247,7 @@ body {
 
 .games-section__title-xbox h2,
 .console-section__title-xbox h2 {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 .games-section__games {
@@ -285,14 +285,14 @@ body {
 }
 
 .footer-xbox {
-	background-color: #333;
+	background-color: var(--xboxBgColor);
 }
 
 .footer hr {
 	border-color: var(--playstationFontColor);
 }
 .footer-xbox hr {
-	border-color: #107c10;
+	border-color: var(--xboxFontColor);
 }
 
 .footer__text,
@@ -304,7 +304,7 @@ body {
 }
 
 .footer__text-xbox {
-	color: #107c10;
+	color: var(--xboxFontColor);
 }
 
 /* *************RWD************ */
