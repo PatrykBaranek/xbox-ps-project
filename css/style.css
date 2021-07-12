@@ -176,9 +176,9 @@ body {
 	transform: translate(-50%, -50%);
 }
 
-.header__text h1,
-.header__text-xbox h1 {
-	font-size: 3.2rem;
+.header__text p,
+.header__text-xbox p {
+	font-size: 2.1rem;
 }
 .header__text .ps-logo-text,
 .header__text-xbox .xbox-logo-text {
@@ -315,8 +315,8 @@ body {
 		font-size: 5.5rem;
 	}
 
-	.header__text h1,
-	.header__text-xbox h1 {
+	.header__text p,
+	.header__text-xbox p {
 		font-size: 5rem;
 	}
 
