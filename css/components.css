@@ -225,7 +225,7 @@
 }
 
 .game__img {
-	height: 40%;
+	height: 50%;
 	width: 100%;
 	background-image: url("../img/playstation/ps-header/horizon-wallpaper.gif");
 	background-size: cover;
@@ -235,12 +235,14 @@
 .game__title {
 	text-align: center;
 	margin: 10px 0;
+	padding: 0.1em;
 	font-size: 2.5rem;
 }
 
 .game__description {
 	padding: 0.1em 2em;
 	font-size: 1.6em;
+	text-align: center;
 }
 
 /* Background image - game section */
