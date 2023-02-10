@@ -1,333 +1,333 @@
-@import "./colors.css";
-@import "./components.css";
+@import './colors.css';
+@import './components.css';
 
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-	font-size: 62.5%;
-	scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
-	background-color: var(--xboxBgColor);
-	color: var(--playstationBgColor);
-	font-family: sans-serif;
-	scroll-padding-top: 60px;
+  background-color: var(--xboxBgColor);
+  color: var(--playstationBgColor);
+  font-family: sans-serif;
+  scroll-padding-top: 60px;
 }
 
 /* Start Page */
 
 .xbx-ps-text {
-	position: absolute;
-	top: 10%;
-	left: 50%;
-	padding: 0.4em 1em;
-	background-color: #ddd;
-	color: var(--xboxBgColor);
-	transform: translate(-50%, -10%);
-	border-radius: 25px;
-	font-size: 2.3rem;
-	text-align: center;
-	animation: hidingText 0.7s 1s linear both;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  padding: 0.4em 1em;
+  background-color: #ddd;
+  color: var(--xboxBgColor);
+  transform: translate(-50%, -10%);
+  border-radius: 25px;
+  font-size: 2.3rem;
+  text-align: center;
+  animation: hidingText 0.7s 1s linear both;
 }
 
 .xbx-ps-container {
-	display: flex;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-	z-index: 200;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 200;
 }
 
 .change-site-section {
-	position: relative;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 /* Playstation section */
 
 .wrapper {
-	margin: 0 auto;
-	width: 100%;
-	/* max-width: 1200px; */
-	/* height: 200vh; */
+  margin: 0 auto;
+  width: 100%;
+  /* max-width: 1200px; */
+  /* height: 200vh; */
 }
 
 /* Nav */
 
 .navbar,
 .navbar-xbox {
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-	height: 60px;
-	width: 100%;
-	background-color: var(--playstationBgColor);
-	border-bottom: 1px solid var(--playstationFontColor);
-	z-index: 300;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: var(--playstationBgColor);
+  border-bottom: 1px solid var(--playstationFontColor);
+  z-index: 300;
 }
 
 .navbar-xbox {
-	border-bottom: 1px solid var(--xboxFontColor);
-	background-color: var(--xboxBgColor);
+  border-bottom: 1px solid var(--xboxFontColor);
+  background-color: var(--xboxBgColor);
 }
 
 .navbar__ps-logo,
 .navbar__xbox-logo {
-	font-size: 4rem;
-	color: var(--playstationFontColor);
+  font-size: 4rem;
+  color: var(--playstationFontColor);
 }
 
 .navbar__xbox-logo {
-	color: var(--xboxFontColor);
+  color: var(--xboxFontColor);
 }
 
 .nav,
 .nav-xbox {
-	position: fixed;
-	top: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	width: 100%;
-	background-color: var(--playstationBgColor);
-	transform: translateX(110%);
-	transition: transform 0.5s;
-	z-index: 200;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--playstationBgColor);
+  transform: translateX(110%);
+  transition: transform 0.5s;
+  z-index: 200;
 }
 
 .nav-xbox {
-	background-color: var(--xboxBgColor);
+  background-color: var(--xboxBgColor);
 }
 
 .nav--active {
-	transform: translateX(0);
+  transform: translateX(0);
 }
 
 .nav__items,
 .nav__items-xbox {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav__item,
 .nav__item-xbox {
-	position: relative;
-	display: block;
-	margin: 0.5em 0;
-	padding: 0.5em 2em;
-	font-size: 2.8rem;
-	text-align: center;
-	text-transform: uppercase;
-	color: var(--playstationFontColor);
-	text-decoration: none;
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--playstationFontColor);
+  text-decoration: none;
 }
 
 .nav__item-xbox {
-	color: var(--xboxFontColor);
+  color: var(--xboxFontColor);
 }
 
 /* Header, Main and footer wrapper */
 .header-main-wrapper {
-	position: relative;
-	top: 60px;
-	/* height: 300vh; */
+  position: relative;
+  top: 60px;
+  /* height: 300vh; */
 }
 
 /* Header */
 
 .header,
 .header-xbox {
-	position: relative;
-	top: 0;
-	height: calc(100vh - 60px);
-	background-position: center;
-	background-size: cover;
+  position: relative;
+  top: 0;
+  height: calc(100vh - 60px);
+  background-position: center;
+  background-size: cover;
 }
 
 .header__bg,
 .header__bg-xbox {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__text,
 .header__text-xbox {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	text-align: center;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 
 .header__text p,
 .header__text-xbox p {
-	font-size: 2.1rem;
+  font-size: 2.1rem;
 }
 .header__text .ps-logo-text,
 .header__text-xbox .xbox-logo-text {
-	text-align: center;
-	font-size: 6rem;
+  text-align: center;
+  font-size: 6rem;
 }
 
 .ps-logo-text {
-	color: var(--playstationFontColor);
+  color: var(--playstationFontColor);
 }
 
 .xbox-logo-text {
-	color: var(--xboxFontColor);
+  color: var(--xboxFontColor);
 }
 
 /* Main */
 
 .main,
 .main-xbox {
-	display: flex;
-	flex-direction: column;
-	/* justify-content: stretch; */
-	align-items: center;
-	padding: 3em 0;
-	/* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: stretch; */
+  align-items: center;
+  padding: 3em 0;
+  /* background-color: #fff; */
 }
 
 .main-xbox {
-	background-color: var(--xboxBgColor);
+  background-color: var(--xboxBgColor);
 }
 
 #ps-main-bgc {
-	background-color: var(--playstationBgColor);
+  background-color: var(--playstationBgColor);
 }
 
 /* Game section */
 
 .games-section {
-	height: 100%;
-	width: 100%;
-	max-width: 1200px;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .games-section__title,
 .console-section__title {
-	padding: 4em 0;
+  padding: 4em 0;
 }
 
 .games-section__title hr,
 .console-section__title hr {
-	border-color: var(--playstationFontColor);
+  border-color: var(--playstationFontColor);
 }
 
 .games-section__title-xbox hr,
 .console-section__title-xbox hr {
-	border-color: var(--xboxFontColor);
+  border-color: var(--xboxFontColor);
 }
 
 .games-section__title h2,
 .console-section__title h2 {
-	text-align: center;
-	font-size: 3rem;
-	margin: 0.6em 0;
-	color: var(--playstationFontColor);
+  text-align: center;
+  font-size: 3rem;
+  margin: 0.6em 0;
+  color: var(--playstationFontColor);
 }
 
 .games-section__title-xbox h2,
 .console-section__title-xbox h2 {
-	color: var(--xboxFontColor);
+  color: var(--xboxFontColor);
 }
 
 .games-section__games {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 0 3em;
-	/* height: 70vh; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 3em;
+  /* height: 70vh; */
 }
 
 /* Console section */
 
 .console-section {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-	max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .console-section__container {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Footer */
 
 .footer,
 .footer-xbox {
-	height: 70px;
-	background-color: var(--playstationBgColor);
+  height: 70px;
+  background-color: var(--playstationBgColor);
 }
 
 .footer-xbox {
-	background-color: var(--xboxBgColor);
+  background-color: var(--xboxBgColor);
 }
 
 .footer hr {
-	border-color: var(--playstationFontColor);
+  border-color: var(--playstationFontColor);
 }
 .footer-xbox hr {
-	border-color: var(--xboxFontColor);
+  border-color: var(--xboxFontColor);
 }
 
 .footer__text,
 .footer__text-xbox {
-	text-align: center;
-	line-height: 70px;
-	font-size: 3rem;
-	color: var(--playstationFontColor);
+  text-align: center;
+  line-height: 70px;
+  font-size: 3rem;
+  color: var(--playstationFontColor);
 }
 
 .footer__text-xbox {
-	color: var(--xboxFontColor);
+  color: var(--xboxFontColor);
 }
 
 /* *************RWD************ */
 
 @media (min-width: 768px) {
-	.nav__item,
-	.nav__item-xbox {
-		font-size: 5.5rem;
-	}
+  .nav__item,
+  .nav__item-xbox {
+    font-size: 5.5rem;
+  }
 
-	.header__text p,
-	.header__text-xbox p {
-		font-size: 5rem;
-	}
+  .header__text p,
+  .header__text-xbox p {
+    font-size: 5rem;
+  }
 
-	.header__text .ps-logo-text,
-	.header__text-xbox .xbox-logo-text {
-		text-align: center;
-		font-size: 10rem;
-	}
+  .header__text .ps-logo-text,
+  .header__text-xbox .xbox-logo-text {
+    text-align: center;
+    font-size: 10rem;
+  }
 
-	.games-section__title h2,
-	.console-section__title h2 {
-		font-size: 6rem;
-	}
+  .games-section__title h2,
+  .console-section__title h2 {
+    font-size: 6rem;
+  }
 }
